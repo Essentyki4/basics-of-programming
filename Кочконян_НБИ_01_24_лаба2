@@ -1,0 +1,11 @@
+def is_palindrome(numbers):
+    num_str = ''.join(str(num) for num in numbers)
+    return num_str == num_str[::-1]
+numbers = []
+for i in range(4):
+    number = int(input(f"Введите число {i+1}: "))
+    numbers.append(number)
+if is_palindrome(numbers):
+    print("Числа образуют палиндром. ")
+else:
+    print("Числа не образуют палиндром. ")
