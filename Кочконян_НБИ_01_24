@@ -1,0 +1,14 @@
+
+#include <iostream>
+int main()
+{
+    double x1, y1, x2, y2;
+    std::cout << "Введите координаты вектора A (x1,y1): ";
+    std::cin >> x1 >> y1;
+    std::cout << "Введите координаты вектора B (x2,y2): ";
+    std::cin >> x2 >>y2;
+    double crossProduct = x1 * x2 + y1 * y2;
+    std::cout << "Прозведение векторов A и B: "<<crossProduct<<std::endl;
+    
+    
+} 
